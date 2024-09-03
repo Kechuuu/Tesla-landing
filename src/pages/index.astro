@@ -3,6 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import LandingHeader from "../components/LandingHeader.astro";
 import HeroSection from "../components/HeroSection.astro";
 import ChargeSection from "../components/ChargeSection.astro";
+import Section from "../components/Section.astro";
+import ModelS from "../components/ModelS.astro";
+import ModelX from "../components/ModelX.astro";
+import Carga from "../components/Carga.astro";
+import PowerWall from "../components/PowerWall.astro";
+import Model3 from "../components/Model3.astro";
 ---
 
 <Layout title="Tesla - La mejor marca de autos">
@@ -12,8 +18,26 @@ import ChargeSection from "../components/ChargeSection.astro";
       <HeroSection />
     </div>
     <div class="snap-center">
+      <ModelS/>
+    </div>
+    <div class="snap-center">
+      <Model3/>
+    </div>
+    <div class="snap-center">
+      <ModelX/>
+    </div>
+    <div class="snap-center">
       <ChargeSection/>
     </div>
+    
+    <div class="snap-center">
+      <PowerWall/>
+    </div>
+    <div class="snap-center">
+      <Carga/>
+    </div>
+    
+
     
   </main>
 </Layout>
