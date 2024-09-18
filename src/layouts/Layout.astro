@@ -1,9 +1,11 @@
 ---
 interface Props {
 	title: string;
+  subtitles: string;
 }
 
 const { title } = Astro.props;
+const {subtitles} = Astro.props;
 ---
 
 <!doctype html>
@@ -15,6 +17,7 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+    <subtitles>{subtitles}</subtitles>
 	</head>
 	<body>
 		<slot />
